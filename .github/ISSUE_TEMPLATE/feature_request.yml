@@ -1,0 +1,29 @@
+name: Feature request
+description: 提出功能建议或改进想法
+title: "[Feature] "
+labels: ["type:feature"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 现在遇到的痛点
+      description: 这个改进想解决什么问题？
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 你希望怎么改
+      description: 可以写你理想中的按钮、流程或规则
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: 影响范围
+      options:
+        - 影响很多人/核心流程
+        - 影响少数人/特定场景
+        - 只是体验优化
+    validations:
+      required: true
